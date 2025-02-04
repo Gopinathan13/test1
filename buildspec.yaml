@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "hello world"
+      - ls -la
+      - touch newfile.txt
+      - echo "edit file" >> newfile.txt
+   build:
+    commands:
+      - echo "Build started on date"
+  post_build:
+    commands:
+      - echo "post build action here"
+artifacts:
+  files:
+    -*.*
+    - newfile.txt
