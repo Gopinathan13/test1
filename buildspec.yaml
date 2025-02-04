@@ -5,14 +5,15 @@ phases:
     commands:
       - echo "hello world"
       - ls -la
-      - touch newfile.txt    
-   build:
+      - touch newfile.txt
+  build:
     commands:
       - echo "Build started on date"
   post_build:
     commands:
       - echo "post build action here"
+
 artifacts:
   files:
-    -*.*
+    - "**/*"
     - newfile.txt
