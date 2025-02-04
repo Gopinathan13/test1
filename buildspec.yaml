@@ -5,8 +5,7 @@ phases:
     commands:
       - echo "hello world"
       - ls -la
-      - touch newfile.txt
-      - echo "edit file" >> newfile.txt
+      - touch newfile.txt    
    build:
     commands:
       - echo "Build started on date"
